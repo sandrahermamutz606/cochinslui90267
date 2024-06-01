@@ -1,0 +1,18 @@
+    printf("1\n"); 
+    sigwait(&sigs, &s); 
+  } 
+} 
+  
+void* r2(void* arg) 
+{ 
+  while(1) 
+  { 
+    sleep(1); 
+    printf("2\n"); 
+    pthread_kill(t1, 34); 
+  } 
+} 
+  
+main() 
+{ 
+  signal(
