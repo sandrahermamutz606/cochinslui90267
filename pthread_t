@@ -1,0 +1,13 @@
+pthread_t t1, t2; 
+sigset_t sigs; 
+  
+void handle(int s) 
+{ 
+} 
+  
+void* r1(void* arg) 
+{ 
+  int s; 
+  while(1) 
+  { 
+    printf("1\n"); 
