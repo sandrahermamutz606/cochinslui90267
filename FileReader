@@ -1,0 +1,14 @@
+import java.io.FileWriter;
+import java.nio.charset.Charset;
+
+class Main {
+  public static void main(String[] args) {
+
+    String file = "output.txt";
+
+    try {
+      //FileReader
+      FileWriter output1 = new FileWriter(file);
+
+      /FileReader
+      FileWriter output2 = new FileWriter(file, Charset.forName("UTF8"));
